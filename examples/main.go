@@ -19,7 +19,7 @@ func (b BasicResponse) Response() interface{} {
 type BasicHandler struct {
 }
 
-func (b BasicHandler) HttpGetHello() BasicResponse {
+func (b BasicHandler) HttpGetHelloWorld() BasicResponse {
 	return BasicResponse{}
 }
 
