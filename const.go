@@ -6,7 +6,7 @@ import (
 )
 
 var camelExtract = regexp.MustCompile(`[A-Z][a-z0-9]*`)
-var methods = [9]string{
+var httpMethods = [9]string{
 	toCamel(http.MethodGet),
 	toCamel(http.MethodPost),
 	toCamel(http.MethodDelete),

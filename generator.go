@@ -10,6 +10,7 @@ import (
 var httpRespType = reflect.TypeOf(new(HttpResponse)).Elem()
 
 func generateHandler(v reflect.Value) (func(*gin.Context), error) {
+	// panic if it isn't function
 	m := v.Type()
 	if m.NumIn() != 0 {
 		return nil, errors.New("Input paramters are not supported yet!")
